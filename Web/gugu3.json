@@ -16,12 +16,12 @@
                     "requestInterval": 5000,
                     "subjectFormatId": "indexed",
                     "selectorSubjectFormatA": {
-                        "selectLists": ".box-width a",
+                        "selectLists": ".vod-detail .detail-info h3.slide-info-title",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".search-box .thumb-content .thumb-txt",
-                        "selectLinks": ".search-box .thumb-menu a",
+                        "selectNames": ".vod-detail .detail-info h3.slide-info-title",
+                        "selectLinks": ".vod-detail .detail-info .vod-detail-bnt a.button",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,8 +31,8 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".anthology-tab  .swiper-wrapper a",
-                        "matchChannelName": "^(?!.*失效)()?(?<ch>.+?)(\\d+)?$",
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
                         "selectEpisodeLists": ".anthology-list-box",
                         "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
@@ -54,16 +54,16 @@
                     },
                     "matchVideo": {
                         "enableNestedUrl": true,
-                        "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
-                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+player/\\?url=(?<v>.+))",
-                        "cookies": "quality=1080",
+                        "matchNestedUrl": "^.+(player).+\\?url=",
+                        "matchVideoUrl": "^.+(m3u8|vip|xigua\\\\.php).+\\\\?",
+                        "cookies": "",
                         "addHeadersToVideo": {
-                            "referer": "",
+                            "referer": "https://www.gugu3.com/",
                             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                         }
                     }
                 },
-                "tier": 0
+                "tier": 2
             }
         }
     ]
