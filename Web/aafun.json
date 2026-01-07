@@ -20,8 +20,8 @@
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-list-item.hl-col-xs-12",
-                        "selectLinks": "div > div > div.hl-item-content > div.hl-item-title.hl-text-site.hl-lc-2 > div > a",
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -33,8 +33,8 @@
                     "selectorChannelFormatFlattened": {
                         "selectChannelNames": ".hl-tabs-btn.hl-slide-swiper",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-plays-list.hl-sort-list.hl-list-hide-xs.hl-list-sm.clearfix",
-                        "selectEpisodesFromList": "a",
+                        "selectEpisodeLists": ".hl-tabs-box.hl-fadeIn",
+                        "selectEpisodesFromList": ".hl-col-xs-4.hl-col-sm-2 > a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -56,9 +56,9 @@
                         "enableNestedUrl": true,
                         "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
                         "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
-                        "cookies": "quality=1080",
+                        "cookies": "",
                         "addHeadersToVideo": {
-                            "referer": "https://www.aafun.cc/",
+                            "referer": "",
                             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                         }
                     }
