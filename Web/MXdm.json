@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "MX动漫",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://www.mxdm.xyz/search/-------------.html?wd={keyword}",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
+                    "rawBaseUrl": "https://www.mxdm.xyz/",
                     "requestInterval": 3000,
-                    "subjectFormatId": "indexed",
+                    "subjectFormatId": "a",
                     "selectorSubjectFormatA": {
                         "selectLists": "div.video-info-header > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -29,12 +29,12 @@
                         "selectNames": "$[*]['title','name']",
                         "preferShorterName": true
                     },
-                    "channelFormatId": "index-grouped",
+                    "channelFormatId": "no-channel",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },

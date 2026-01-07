@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "异世界动漫",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "https://www.dmmiku.com/template/conch/asset/img/favicon.png",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://www.dmmiku.com/index.php/vod/search.html?wd={keyword}&submit=",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
+                    "rawBaseUrl": "",
                     "requestInterval": 3000,
-                    "subjectFormatId": "indexed",
+                    "subjectFormatId": "a",
                     "selectorSubjectFormatA": {
-                        "selectLists": "div.video-info-header > a",
+                        "selectLists": "body > div.container > div.left_row.fl > div.pannel.search_box.clearfix > ul.vodlist.clearfix > li > div.searchlist_img > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".search-box .thumb-content > .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,10 +31,10 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
-                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectChannelNames": "#NumTab > a",
+                        "matchChannelName": "^()?\\s*(?<ch>.+?)(\\d+)?\\s*$",
+                        "selectEpisodeLists": "#playlistbox",
+                        "selectEpisodesFromList": ".content_playlist a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -43,7 +43,7 @@
                         "selectEpisodeLinks": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
-                    "defaultResolution": "720P",
+                    "defaultResolution": "1080P",
                     "defaultSubtitleLanguage": "CHS",
                     "onlySupportsPlayers": [],
                     "filterByEpisodeSort": true,
@@ -63,7 +63,7 @@
                         }
                     }
                 },
-                "tier": 2
+                "tier": 1
             }
         }
     ]

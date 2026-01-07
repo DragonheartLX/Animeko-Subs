@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "咕咕番",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "https://www.gugu3.com/upload/site/20240809-1/7128d3562abaed14571d6227e1240aab.png",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://www.gugu3.com/index.php/vod/search.html?wd={keyword}",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
-                    "requestInterval": 3000,
+                    "rawBaseUrl": "",
+                    "requestInterval": 5000,
                     "subjectFormatId": "indexed",
                     "selectorSubjectFormatA": {
-                        "selectLists": "div.video-info-header > a",
+                        "selectLists": ".box-width a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".search-box .thumb-content .thumb-txt",
+                        "selectLinks": ".search-box .thumb-menu a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,10 +31,10 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
-                        "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectChannelNames": ".anthology-tab  .swiper-wrapper a",
+                        "matchChannelName": "^(?!.*失效)()?(?<ch>.+?)(\\d+)?$",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -43,7 +43,7 @@
                         "selectEpisodeLinks": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
-                    "defaultResolution": "720P",
+                    "defaultResolution": "1080P",
                     "defaultSubtitleLanguage": "CHS",
                     "onlySupportsPlayers": [],
                     "filterByEpisodeSort": true,
@@ -55,7 +55,7 @@
                     "matchVideo": {
                         "enableNestedUrl": true,
                         "matchNestedUrl": "^.+(m3u8|vip|xigua\\.php).+\\?",
-                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
+                        "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)|(.+player/\\?url=(?<v>.+))",
                         "cookies": "quality=1080",
                         "addHeadersToVideo": {
                             "referer": "",
@@ -63,7 +63,7 @@
                         }
                     }
                 },
-                "tier": 2
+                "tier": 0
             }
         }
     ]

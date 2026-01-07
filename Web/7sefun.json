@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "七色番",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "https://www.7sefun.top/favicon.ico",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://www.7sefun.top/vodsearch/-------------.html?wd={keyword}",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
+                    "rawBaseUrl": "https://www.7sefun.top/",
                     "requestInterval": 3000,
                     "subjectFormatId": "indexed",
                     "selectorSubjectFormatA": {
-                        "selectLists": "div.video-info-header > a",
+                        "selectLists": ".video-wrapper",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".video-by",
+                        "selectLinks": ".video-wrapper",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,10 +31,10 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
+                        "selectChannelNames": ".chat-stream-bfq",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectEpisodeLists": ".message-container.vod-play-list-container",
+                        "selectEpisodesFromList": ".e00369g3d6a a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -43,7 +43,7 @@
                         "selectEpisodeLinks": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
-                    "defaultResolution": "720P",
+                    "defaultResolution": "1080P",
                     "defaultSubtitleLanguage": "CHS",
                     "onlySupportsPlayers": [],
                     "filterByEpisodeSort": true,
@@ -58,7 +58,7 @@
                         "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
                         "cookies": "quality=1080",
                         "addHeadersToVideo": {
-                            "referer": "",
+                            "referer": "https://www.7sefun.top/",
                             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                         }
                     }

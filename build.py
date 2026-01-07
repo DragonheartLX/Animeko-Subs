@@ -78,10 +78,10 @@ def main():
 
     print(f"BT源数量: {len(list_BT)}")
     print(f"在线源数量: {len(list_Web)}")
-    
-    # 更新MD5
-    
 
+    # TODO: 更新MD5
+
+    
     # 合并数据源
     merged_data_BT, count = merge_json(list_BT, dir_BT, True)
     print(f"BT源合并数量: {count}")

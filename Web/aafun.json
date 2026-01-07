@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "风铃动漫",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "https://www.aafun.cc/favicon.ico",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://www.aafun.cc/feng-s.html?wd={keyword}&submit=",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
+                    "rawBaseUrl": "https://www.aafun.cc/",
                     "requestInterval": 3000,
-                    "subjectFormatId": "indexed",
+                    "subjectFormatId": "a",
                     "selectorSubjectFormatA": {
-                        "selectLists": "div.video-info-header > a",
+                        "selectLists": "div > div > div.hl-item-content > div.hl-item-title.hl-text-site.hl-lc-2 > div > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".hl-list-item.hl-col-xs-12",
+                        "selectLinks": "div > div > div.hl-item-content > div.hl-item-title.hl-text-site.hl-lc-2 > div > a",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,10 +31,10 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
+                        "selectChannelNames": ".hl-tabs-btn.hl-slide-swiper",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectEpisodeLists": ".hl-plays-list.hl-sort-list.hl-list-hide-xs.hl-list-sm.clearfix",
+                        "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -58,7 +58,7 @@
                         "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http(s)?:\\/\\/).+((\\.mp4)|(\\.mkv)|(m3u8)).*(\\?.+)?)|(akamaized)|(bilivideo.com)",
                         "cookies": "quality=1080",
                         "addHeadersToVideo": {
-                            "referer": "",
+                            "referer": "https://www.aafun.cc/",
                             "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
                         }
                     }

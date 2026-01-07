@@ -4,24 +4,24 @@
             "factoryId": "web-selector",
             "version": 2,
             "arguments": {
-                "name": "樱花动漫",
+                "name": "稀饭动漫",
                 "description": "",
-                "iconUrl": "https://www.295yhw.com/favicon.ico",
+                "iconUrl": "https://dm.xifanacg.com/template/dsn2/static/img/fav.png",
                 "searchConfig": {
-                    "searchUrl": "https://www.295yhw.com/search/-------------.html?wd={keyword}&submit=",
+                    "searchUrl": "https://dm.xifanacg.com/search.html?wd={keyword}",
                     "searchUseOnlyFirstWord": true,
                     "searchRemoveSpecial": true,
                     "searchUseSubjectNamesCount": 1,
-                    "rawBaseUrl": "https://www.295yhw.com/",
+                    "rawBaseUrl": "https://dm.xifanacg.com/",
                     "requestInterval": 3000,
                     "subjectFormatId": "indexed",
                     "selectorSubjectFormatA": {
-                        "selectLists": "div.video-info-header > a",
+                        "selectLists": ".detail-info h3.slide-info-title",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatIndexed": {
-                        "selectNames": ".hl-item-title.hl-text-site.hl-lc-2",
-                        "selectLinks": ".hl-item-title.hl-text-site.hl-lc-2 > a",
+                        "selectNames": ".detail-info h3.slide-info-title",
+                        "selectLinks": "\t.detail-info .vod-detail-bnt a.button",
                         "preferShorterName": true
                     },
                     "selectorSubjectFormatJsonPathIndexed": {
@@ -31,10 +31,10 @@
                     },
                     "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".hl-plays-from.hl-tabs .hl-tabs-btn",
+                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".hl-list-wrap .hl-plays-list",
-                        "selectEpisodesFromList": "li a",
+                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
@@ -43,7 +43,7 @@
                         "selectEpisodeLinks": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
                     },
-                    "defaultResolution": "720P",
+                    "defaultResolution": "1080P",
                     "defaultSubtitleLanguage": "CHS",
                     "onlySupportsPlayers": [],
                     "filterByEpisodeSort": true,
