@@ -1,0 +1,19 @@
+{
+    "mediaSources": [
+        {
+            "factoryId": "rss",
+            "version": 1,
+            "arguments": {
+                "name": "AnimeGarden",
+                "description": "动画 BT 资源聚合站",
+                "iconUrl": "https://animes.garden/favicon.ico",
+                "searchConfig": {
+                    "searchUrl": "https://api.animes.garden/feed.xml?filter=[{\"type\":\"动画\",\"search\":[\"{keyword}\"]}]",
+                    "filterByEpisodeSort": true,
+                    "filterBySubjectName": true
+                },
+                "tier": 2
+            }
+        }
+    ]
+}
