@@ -6,7 +6,7 @@
             "arguments": {
                 "name": "MX动漫",
                 "description": "",
-                "iconUrl": "",
+                "iconUrl": "https://www.mxdm.xyz/mxstatic/picture/logo.png",
                 "searchConfig": {
                     "searchUrl": "https://www.mxdm.xyz/search/-------------.html?wd={keyword}",
                     "searchUseOnlyFirstWord": true,
