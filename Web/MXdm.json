@@ -29,11 +29,11 @@
                         "selectNames": "$[*]['title','name']",
                         "preferShorterName": true
                     },
-                    "channelFormatId": "no-channel",
+                    "channelFormatId": "index-grouped",
                     "selectorChannelFormatFlattened": {
-                        "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
+                        "selectChannelNames": ".module-tab-item.tab-item",
                         "matchChannelName": "^(?<ch>.+?)(\\d+)?$",
-                        "selectEpisodeLists": ".anthology-list-box",
+                        "selectEpisodeLists": ".module-blocklist.scroll-box.scroll-box-y",
                         "selectEpisodesFromList": "a",
                         "selectEpisodeLinksFromList": "",
                         "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
